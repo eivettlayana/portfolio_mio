@@ -220,16 +220,10 @@
 
 })();
 
-emailjs.init("FiuFhJC6X0yLqCQIo");
 
-let formulario = document.getElementById("contactForm");
-
-formulario.addEventListener("submit", function (e) {
-  e.preventDefault();
-});
 document.addEventListener("DOMContentLoaded", function () {
 
-  emailjs.init("TU_PUBLIC_KEY");
+  emailjs.init("FiuFhJC6X0yLqCQIo");
 
   const formulario = document.getElementById("contactForm");
 
@@ -242,8 +236,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".loading").style.display = "block";
 
       await emailjs.sendForm(
-        "TU_SERVICE_ID",
-        "TU_TEMPLATE_ID",
+        "service_018z4jj",
+        "template_ozk55fp",
         this
       );
 
